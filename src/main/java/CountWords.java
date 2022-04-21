@@ -6,7 +6,8 @@ public class CountWords {
         Scanner scanner=new Scanner(System.in);
         System.out.println("Enter text whose words you want to count");
         String targetString=scanner.nextLine();
-        CountWords.wordCountTokenizer(targetString);
+//        CountWords.StringToCharArrayExample(targetString);
+//        CountWords.wordCountTokenizer(targetString);
 //        CountWords.stringWordCount(targetString);
 
 //        CountWords.wordCountUsingSplit("count words using   split  ");
@@ -37,5 +38,13 @@ public class CountWords {
         }
         StringTokenizer tokenCount= new StringTokenizer(targetString);
         System.out.println("The number of words is: "+tokenCount.countTokens());
+    }
+
+    public static void StringToCharArrayExample(String targetString) {
+        ;
+        char[] ch = targetString.toCharArray();
+        for (int i = 0; i < ch.length; i++) {
+            System.out.println(ch[i]);
+        }
     }
 }
